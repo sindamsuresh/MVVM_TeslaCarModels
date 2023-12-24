@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		BEF70B0F2B38E0C400D467C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF70B0E2B38E0C400D467C4 /* AppDelegate.swift */; };
 		BEF70B112B38E0C400D467C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF70B102B38E0C400D467C4 /* SceneDelegate.swift */; };
-		BEF70B132B38E0C400D467C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF70B122B38E0C400D467C4 /* ViewController.swift */; };
 		BEF70B162B38E0C400D467C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF70B142B38E0C400D467C4 /* Main.storyboard */; };
 		BEF70B182B38E0C600D467C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEF70B172B38E0C600D467C4 /* Assets.xcassets */; };
 		BEF70B1B2B38E0C600D467C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF70B192B38E0C600D467C4 /* LaunchScreen.storyboard */; };
 		BEF70B262B38E0C600D467C4 /* MVVM_TeslaCarModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF70B252B38E0C600D467C4 /* MVVM_TeslaCarModelsTests.swift */; };
 		BEF70B302B38E0C600D467C4 /* MVVM_TeslaCarModelsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF70B2F2B38E0C600D467C4 /* MVVM_TeslaCarModelsUITests.swift */; };
 		BEF70B322B38E0C600D467C4 /* MVVM_TeslaCarModelsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF70B312B38E0C600D467C4 /* MVVM_TeslaCarModelsUITestsLaunchTests.swift */; };
+		BEF70B472B38E1DE00D467C4 /* CarModelsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF70B462B38E1DE00D467C4 /* CarModelsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		BEF70B0B2B38E0C400D467C4 /* MVVM_TeslaCarModels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_TeslaCarModels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF70B0E2B38E0C400D467C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEF70B102B38E0C400D467C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BEF70B122B38E0C400D467C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BEF70B152B38E0C400D467C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEF70B172B38E0C600D467C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEF70B1A2B38E0C600D467C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		BEF70B2B2B38E0C600D467C4 /* MVVM_TeslaCarModelsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVM_TeslaCarModelsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF70B2F2B38E0C600D467C4 /* MVVM_TeslaCarModelsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_TeslaCarModelsUITests.swift; sourceTree = "<group>"; };
 		BEF70B312B38E0C600D467C4 /* MVVM_TeslaCarModelsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_TeslaCarModelsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BEF70B462B38E1DE00D467C4 /* CarModelsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +99,14 @@
 		BEF70B0D2B38E0C400D467C4 /* MVVM_TeslaCarModels */ = {
 			isa = PBXGroup;
 			children = (
-				BEF70B0E2B38E0C400D467C4 /* AppDelegate.swift */,
-				BEF70B102B38E0C400D467C4 /* SceneDelegate.swift */,
-				BEF70B122B38E0C400D467C4 /* ViewController.swift */,
-				BEF70B142B38E0C400D467C4 /* Main.storyboard */,
+				BEF70B452B38E15000D467C4 /* App&SceneDelegate */,
+				BEF70B432B38E12600D467C4 /* Data */,
+				BEF70B422B38E11900D467C4 /* Model */,
+				BEF70B412B38E10E00D467C4 /* View */,
+				BEF70B402B38E0FF00D467C4 /* ViewModel */,
+				BEF70B3E2B38E0EA00D467C4 /* Controller */,
+				BEF70B442B38E13000D467C4 /* Storyboards */,
 				BEF70B172B38E0C600D467C4 /* Assets.xcassets */,
-				BEF70B192B38E0C600D467C4 /* LaunchScreen.storyboard */,
 				BEF70B1C2B38E0C600D467C4 /* Info.plist */,
 			);
 			path = MVVM_TeslaCarModels;
@@ -125,6 +127,60 @@
 				BEF70B312B38E0C600D467C4 /* MVVM_TeslaCarModelsUITestsLaunchTests.swift */,
 			);
 			path = MVVM_TeslaCarModelsUITests;
+			sourceTree = "<group>";
+		};
+		BEF70B3E2B38E0EA00D467C4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BEF70B462B38E1DE00D467C4 /* CarModelsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BEF70B402B38E0FF00D467C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BEF70B412B38E10E00D467C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BEF70B422B38E11900D467C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEF70B432B38E12600D467C4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BEF70B442B38E13000D467C4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BEF70B142B38E0C400D467C4 /* Main.storyboard */,
+				BEF70B192B38E0C600D467C4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BEF70B452B38E15000D467C4 /* App&SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BEF70B0E2B38E0C400D467C4 /* AppDelegate.swift */,
+				BEF70B102B38E0C400D467C4 /* SceneDelegate.swift */,
+			);
+			path = "App&SceneDelegate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +314,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEF70B132B38E0C400D467C4 /* ViewController.swift in Sources */,
 				BEF70B0F2B38E0C400D467C4 /* AppDelegate.swift in Sources */,
 				BEF70B112B38E0C400D467C4 /* SceneDelegate.swift in Sources */,
+				BEF70B472B38E1DE00D467C4 /* CarModelsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,11 +501,14 @@
 				DEVELOPMENT_TEAM = W588GMFYXB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MVVM_TeslaCarModels/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "MVVM Tesla";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,11 +532,14 @@
 				DEVELOPMENT_TEAM = W588GMFYXB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MVVM_TeslaCarModels/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "MVVM Tesla";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
