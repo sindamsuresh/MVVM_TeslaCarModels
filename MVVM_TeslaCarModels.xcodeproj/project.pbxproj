@@ -16,6 +16,10 @@
 		BEF70B302B38E0C600D467C4 /* MVVM_TeslaCarModelsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF70B2F2B38E0C600D467C4 /* MVVM_TeslaCarModelsUITests.swift */; };
 		BEF70B322B38E0C600D467C4 /* MVVM_TeslaCarModelsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF70B312B38E0C600D467C4 /* MVVM_TeslaCarModelsUITestsLaunchTests.swift */; };
 		BEF70B472B38E1DE00D467C4 /* CarModelsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF70B462B38E1DE00D467C4 /* CarModelsVC.swift */; };
+		BEF70B492B39268B00D467C4 /* TeslaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF70B482B39268B00D467C4 /* TeslaModel.swift */; };
+		BEF70B4C2B3927E400D467C4 /* CarModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF70B4B2B3927E400D467C4 /* CarModelCell.swift */; };
+		BEF70B4E2B39292500D467C4 /* TeslaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF70B4D2B39292500D467C4 /* TeslaViewModel.swift */; };
+		BEF70B502B392A1D00D467C4 /* TeslaCarModelsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF70B4F2B392A1D00D467C4 /* TeslaCarModelsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		BEF70B2F2B38E0C600D467C4 /* MVVM_TeslaCarModelsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_TeslaCarModelsUITests.swift; sourceTree = "<group>"; };
 		BEF70B312B38E0C600D467C4 /* MVVM_TeslaCarModelsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_TeslaCarModelsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BEF70B462B38E1DE00D467C4 /* CarModelsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelsVC.swift; sourceTree = "<group>"; };
+		BEF70B482B39268B00D467C4 /* TeslaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaModel.swift; sourceTree = "<group>"; };
+		BEF70B4B2B3927E400D467C4 /* CarModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelCell.swift; sourceTree = "<group>"; };
+		BEF70B4D2B39292500D467C4 /* TeslaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaViewModel.swift; sourceTree = "<group>"; };
+		BEF70B4F2B392A1D00D467C4 /* TeslaCarModelsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaCarModelsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +148,7 @@
 		BEF70B402B38E0FF00D467C4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BEF70B4D2B39292500D467C4 /* TeslaViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -147,6 +156,7 @@
 		BEF70B412B38E10E00D467C4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BEF70B4A2B39271B00D467C4 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -154,6 +164,7 @@
 		BEF70B422B38E11900D467C4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BEF70B482B39268B00D467C4 /* TeslaModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,6 +172,7 @@
 		BEF70B432B38E12600D467C4 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				BEF70B4F2B392A1D00D467C4 /* TeslaCarModelsData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -181,6 +193,14 @@
 				BEF70B102B38E0C400D467C4 /* SceneDelegate.swift */,
 			);
 			path = "App&SceneDelegate";
+			sourceTree = "<group>";
+		};
+		BEF70B4A2B39271B00D467C4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BEF70B4B2B3927E400D467C4 /* CarModelCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,9 +334,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF70B502B392A1D00D467C4 /* TeslaCarModelsData.swift in Sources */,
 				BEF70B0F2B38E0C400D467C4 /* AppDelegate.swift in Sources */,
+				BEF70B492B39268B00D467C4 /* TeslaModel.swift in Sources */,
+				BEF70B4E2B39292500D467C4 /* TeslaViewModel.swift in Sources */,
 				BEF70B112B38E0C400D467C4 /* SceneDelegate.swift in Sources */,
 				BEF70B472B38E1DE00D467C4 /* CarModelsVC.swift in Sources */,
+				BEF70B4C2B3927E400D467C4 /* CarModelCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
